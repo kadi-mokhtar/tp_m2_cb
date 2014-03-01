@@ -9,7 +9,7 @@ import org.paumard.model.Marin;
 @Stateless
 public class MarinEJB {
 
-	@PersistenceContext(unitName="cloudbees-project")
+	@PersistenceContext(unitName="MySQL")
 	private EntityManager em ;
 	
 	public Long createMarin(Marin marin) {
