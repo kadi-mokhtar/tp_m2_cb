@@ -48,4 +48,45 @@
 	</h:form>
 
 </body>
+
+<h3>Supression par nom</h3>
+
+	<h:form>
+       <table>
+    
+         <tr>
+		<td>
+			<h:outputLabel for="firstName" value="nom"/>
+		</td>
+		<td>
+			<h:inputText   id="lastName" value="#{marinControler.marin.nom}"/>
+		</td>
+		<td>
+			<h:commandButton value="Supprimer" action="#{marinControler.delete()}" />
+		   </td>
+	</tr>
+     </table>
+  </h:form>
+  </div>
+  
+  
+<h3>recherche par id</h3>
+
+	<h:form>
+       <table>
+    
+         <tr>
+		<td>
+			<h:outputLabel for="Id" value="Id"/>
+		</td>
+		<td>
+			<h:inputText   id="Id" value="#{marinControler.marin.id"/>
+		</td>
+		<td>
+			<h:commandButton value="chercher" action="#{marinControler.rechercheById}" />
+		   </td>
+	</tr>
+     </table>
+  </h:form>
+  </div>
 </html>
